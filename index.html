@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="list" class="page">
+      <h1>Список заметок <button id="go-add">+</button></h1>
+      <ul id="notes-list"></ul>
+    </div>
+    <div id="edit" class="page">
+      <h1>Редактирование</h1>
+      <button id="go-list">Список</button>
+      <button id="save">Сохранить</button>
+      <form>
+        <input id="edit-text" type="text" />
+      </form>
+    </div>
+    <div id="add" class="page">
+      <h1>Добавление заметок</h1>
+      <button id="add-button">Добавить заметку</button>
+      <button id="go-list1">Список</button>
+      <form>
+        <input id="note-text" type="text" />
+      </form>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>

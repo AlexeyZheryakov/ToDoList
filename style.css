@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+#list {
+  display: block;
+}
+
+#edit {
+  display: none;
+}
+
+#add {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  border-color: transparent;
+  background-color: #1d99ff;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  
+}
+
+button:hover {
+  background-color: #77c2ff;
+  
+  }
+  

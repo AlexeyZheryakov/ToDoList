@@ -10,23 +10,23 @@
   </head>
   <body>
     <div id="list" class="page">
-      <h1>Список заметок <button id="go-add">+</button></h1>
+      <h1>Список заметок <button id="go-add"><img src="add.svg" alt="add"></button></h1>
       <ul id="notes-list"></ul>
     </div>
     <div id="edit" class="page">
       <h1>Редактирование</h1>
-      <button id="go-list">Список</button>
-      <button id="save">Сохранить</button>
       <form>
         <input id="edit-text" type="text" />
+         <button id="save"><img src="check.svg" alt="check"></button>
+         <button id="go-list"><img src="list.svg" alt="list"></button>
       </form>
     </div>
     <div id="add" class="page">
       <h1>Добавление заметок</h1>
-      <button id="add-button">Добавить заметку</button>
-      <button id="go-list1">Список</button>
       <form>
         <input id="note-text" type="text" />
+        <button id="add-button"><img src="check.svg" alt="check"></button>
+        <button id="go-list1"><img src="list.svg" alt="list"></button>
       </form>
     </div>
     <script src="main.js" async defer></script>

@@ -60,7 +60,7 @@ function initList() {
   for (let key in localStorage) {
     if (key.indexOf("note") === 0) {
       const note = JSON.parse(localStorage.getItem(key));
-      noteHTML += "<li>" + note.text + "</li>" + "<button data-deletekey="+0+" data-key="+key+">Edit</button><button data-deletekey="+1+" data-key="+key+">Delete</button>";
+      noteHTML += "<li>" + note.text + "</li>" + "<button class='edit' data-deletekey="+0+" data-key="+key+"></button><button class='delete' data-deletekey="+1+" data-key="+key+"></button>";
      
     }
   

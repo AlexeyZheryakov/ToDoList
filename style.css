@@ -45,9 +45,9 @@ button {
   } */
   
 .edit {
-  background: url(edit.svg) no-repeat; 
+  background: url(icons/edit.svg) no-repeat; 
 }
 
 .delete {
-  background: url(delete.svg) no-repeat; 
+  background: url(icons/delete.svg) no-repeat; 
 }

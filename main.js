@@ -20,9 +20,9 @@ function goToAdd() {
 function init() {
   const buttonAdd = document.getElementById("go-add");
   buttonAdd.addEventListener("click", goToAdd);
-  const buttonList = document.getElementById("go-list");
+  const buttonList = document.getElementById("go-from-edit-to-list");
   buttonList.addEventListener("click", goToList);
-  const buttonList1 = document.getElementById("go-list1");
+  const buttonList1 = document.getElementById("go-from-add-to-list");
   buttonList1.addEventListener("click", goToList);
   const buttonSave = document.getElementById("save");
   buttonSave.addEventListener("click", editSave);
@@ -60,7 +60,9 @@ function initList() {
   for (let key in localStorage) {
     if (key.indexOf("note") === 0) {
       const note = JSON.parse(localStorage.getItem(key));
-      noteHTML += "<li>" + note.text + "</li>" + "<button data-deletekey="+0+" data-key="+key+">Edit</button><button data-deletekey="+1+" data-key="+key+">Delete</button>";
+      const editButton = "<button class='edit' data-deletekey="+0+" data-key="+key+"></button>";
+      const deleteButton = "<button class='delete' data-deletekey="+1+" data-key="+key+"></button>";
+       noteHTML += "<li>" + note.text + editButton + deleteButton + "</li>";
      
     }
   

@@ -51,3 +51,15 @@ button {
 .delete {
   background: url(icons/delete.svg) no-repeat; 
 }
+
+.add-favorites {
+  background: url(icons/star.border.svg) no-repeat;
+}
+
+.favorites {
+  background: url(icons/star.svg) no-repeat;
+}
+
+.add-button {
+  background: url(icons/add.svg) no-repeat;
+}
